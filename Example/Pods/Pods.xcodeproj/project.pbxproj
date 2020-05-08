@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		04E68D40246597C500FDA1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		04E68E3D24659B9A00FDA1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2D616FE306A368DA08B41DB828004C9D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E129245188F7E319B40C3ABE8DA3FB /* ReplaceMe.swift */; };
+		04E68E452465B4B600FDA1BC /* SetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E68E442465B4B600FDA1BC /* SetUp.swift */; };
 		64D1A2A5F7DE636E5C81C9AF662374D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		6648ED98BF883CE4459124F91D9354D9 /* Pods-MSSlibIOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53BB6E6FB294CB7F726A830571CF2AB1 /* Pods-MSSlibIOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72BE72A65EAC108894BA464AB207B664 /* Pods-MSSlibIOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E913D61D2CDC1CC6E34E70664EAA78 /* Pods-MSSlibIOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		03DB28BB2599F7680B84125BCE300E28 /* Pods-MSSlibIOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSSlibIOS_Example.modulemap"; sourceTree = "<group>"; };
+		04E68E442465B4B600FDA1BC /* SetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUp.swift; sourceTree = "<group>"; };
 		06DADF3D01DF0A3A6F7F89DE3A9A910F /* MSSlibIOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSSlibIOS-prefix.pch"; sourceTree = "<group>"; };
 		0A2C0A140762DC828CD66DA15815B20C /* MSSlibIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSSlibIOS-dummy.m"; sourceTree = "<group>"; };
 		1967943B369D08FC80B2260070CFE119 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		CDC8627CB00274E117DEFC5B7F0F6925 /* Pods-MSSlibIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSSlibIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CE3EF4A81E25A343B715CDFD61D47F9D /* Pods-MSSlibIOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSSlibIOS_Tests.modulemap"; sourceTree = "<group>"; };
 		D596CDE28A488BF95E26706DB2CD6AA7 /* MSSlibIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSSlibIOS.release.xcconfig; sourceTree = "<group>"; };
-		E2E129245188F7E319B40C3ABE8DA3FB /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MSSlibIOS/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		E7FF2847E33B1B3F52442FC8A7DF37F6 /* Pods-MSSlibIOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSSlibIOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F06E36B5775E130B4F4B734FEFF9152B /* Pods-MSSlibIOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSSlibIOS_Example-Info.plist"; sourceTree = "<group>"; };
 		F17EE886F56A2A9C0058367467BE00DC /* Pods-MSSlibIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSSlibIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,10 +100,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04E68E432465B44C00FDA1BC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04E68E442465B4B600FDA1BC /* SetUp.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		107A3875670808CD83CFDAF997950A8F /* MSSlibIOS */ = {
 			isa = PBXGroup;
 			children = (
-				E2E129245188F7E319B40C3ABE8DA3FB /* ReplaceMe.swift */,
+				04E68E432465B44C00FDA1BC /* Classes */,
 				22048FEC52D1F7841694FD4236751217 /* Pod */,
 				580768A0D228D356C33BDFE837B4B7A4 /* Support Files */,
 			);
@@ -327,6 +335,7 @@
 					};
 					BE8C5FF1D69BF04A087CEB25862F5B22 = {
 						DevelopmentTeam = DTYK3743QS;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -396,7 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB031B089DE87A38AC30F7468ED203F0 /* MSSlibIOS-dummy.m in Sources */,
-				2D616FE306A368DA08B41DB828004C9D /* ReplaceMe.swift in Sources */,
+				04E68E452465B4B600FDA1BC /* SetUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +639,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7952964C428902198E8882A4B4D2E6C3 /* MSSlibIOS.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -652,6 +662,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -663,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D596CDE28A488BF95E26706DB2CD6AA7 /* MSSlibIOS.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -685,6 +698,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
