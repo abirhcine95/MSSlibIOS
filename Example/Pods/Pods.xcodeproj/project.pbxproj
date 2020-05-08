@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F0FC3757910A4EC936AA85FADF97AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		04E68D40246597C500FDA1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		04E68D41246597C600FDA1BC /* Foundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04E68E3D24659B9A00FDA1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		04E68E3E24659B9A00FDA1BC /* Foundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D616FE306A368DA08B41DB828004C9D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E129245188F7E319B40C3ABE8DA3FB /* ReplaceMe.swift */; };
 		64D1A2A5F7DE636E5C81C9AF662374D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		6648ED98BF883CE4459124F91D9354D9 /* Pods-MSSlibIOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53BB6E6FB294CB7F726A830571CF2AB1 /* Pods-MSSlibIOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C809F31E8E77EEF8131FD01999BBC6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		72BE72A65EAC108894BA464AB207B664 /* Pods-MSSlibIOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E913D61D2CDC1CC6E34E70664EAA78 /* Pods-MSSlibIOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		770F44DBC063AEC10F49554123A34698 /* Pods-MSSlibIOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C161C4C3E1441C44098FA5941FF10 /* Pods-MSSlibIOS_Tests-dummy.m */; };
 		90340508F3FB61A329666F61628C6F0B /* Pods-MSSlibIOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265A903439F86F93476DEE2926E2AB /* Pods-MSSlibIOS_Example-dummy.m */; };
@@ -36,13 +38,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		04E68C8F2465977900FDA1BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04E68D41246597C600FDA1BC /* Foundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E68E3F24659B9A00FDA1BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04E68E3E24659B9A00FDA1BC /* Foundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		03DB28BB2599F7680B84125BCE300E28 /* Pods-MSSlibIOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSSlibIOS_Example.modulemap"; sourceTree = "<group>"; };
 		06DADF3D01DF0A3A6F7F89DE3A9A910F /* MSSlibIOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSSlibIOS-prefix.pch"; sourceTree = "<group>"; };
 		0A2C0A140762DC828CD66DA15815B20C /* MSSlibIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSSlibIOS-dummy.m"; sourceTree = "<group>"; };
-		1967943B369D08FC80B2260070CFE119 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1967943B369D08FC80B2260070CFE119 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		231DDF2B282D303CF4687516B06A1CBE /* Pods-MSSlibIOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSSlibIOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		23DE2D1B835F06E24963161365FCBFC7 /* Pods_MSSlibIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MSSlibIOS_Tests.framework; path = "Pods-MSSlibIOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23DE2D1B835F06E24963161365FCBFC7 /* Pods_MSSlibIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSSlibIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		53BB6E6FB294CB7F726A830571CF2AB1 /* Pods-MSSlibIOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MSSlibIOS_Example-umbrella.h"; sourceTree = "<group>"; };
 		598C08132F7BA47D3E91308AA5087FC1 /* MSSlibIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MSSlibIOS.modulemap; sourceTree = "<group>"; };
@@ -52,14 +79,14 @@
 		7BE8F2086902562CF40787BB4046B2B6 /* Pods-MSSlibIOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSSlibIOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7D36F6E76DF9ACD0B7F18F4FCCDEA5AF /* Pods-MSSlibIOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSSlibIOS_Tests-Info.plist"; sourceTree = "<group>"; };
 		7E6C161C4C3E1441C44098FA5941FF10 /* Pods-MSSlibIOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSSlibIOS_Tests-dummy.m"; sourceTree = "<group>"; };
-		86D9025003A82A286D2CBE94B0E5059F /* MSSlibIOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MSSlibIOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		86D9025003A82A286D2CBE94B0E5059F /* MSSlibIOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MSSlibIOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DF1696D1F76FFF26AEB8344CE3CD90D /* Pods-MSSlibIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSSlibIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9265A903439F86F93476DEE2926E2AB /* Pods-MSSlibIOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSSlibIOS_Example-dummy.m"; sourceTree = "<group>"; };
 		AECC8056F49AECF39C803CCB10C9F53A /* Pods-MSSlibIOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSSlibIOS_Example-frameworks.sh"; sourceTree = "<group>"; };
-		BBD92A2166A3A4B7C4AE49F8A6B161E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BBD92A2166A3A4B7C4AE49F8A6B161E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C2C54C53BCE911AFE317AA36FBAB4CEA /* Pods-MSSlibIOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSSlibIOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C2E84E83A2A72CE9D0406A30E5ED3FA7 /* MSSlibIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MSSlibIOS.framework; path = MSSlibIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E84E83A2A72CE9D0406A30E5ED3FA7 /* MSSlibIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSSlibIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9AE2D2367A797D085A0C37A6A7FE2D /* MSSlibIOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MSSlibIOS-Info.plist"; sourceTree = "<group>"; };
 		CDC8627CB00274E117DEFC5B7F0F6925 /* Pods-MSSlibIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSSlibIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CE3EF4A81E25A343B715CDFD61D47F9D /* Pods-MSSlibIOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSSlibIOS_Tests.modulemap"; sourceTree = "<group>"; };
@@ -68,7 +95,7 @@
 		E7FF2847E33B1B3F52442FC8A7DF37F6 /* Pods-MSSlibIOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSSlibIOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F06E36B5775E130B4F4B734FEFF9152B /* Pods-MSSlibIOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSSlibIOS_Example-Info.plist"; sourceTree = "<group>"; };
 		F17EE886F56A2A9C0058367467BE00DC /* Pods-MSSlibIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSSlibIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F55A86A9FC6B5A1FE347C6E0A8F49861 /* Pods_MSSlibIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MSSlibIOS_Example.framework; path = "Pods-MSSlibIOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55A86A9FC6B5A1FE347C6E0A8F49861 /* Pods_MSSlibIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSSlibIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCE6989BC21019CDBC15634A2C1BF6D /* MSSlibIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSSlibIOS-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F0FC3757910A4EC936AA85FADF97AF8 /* Foundation.framework in Frameworks */,
+				04E68E3D24659B9A00FDA1BC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C809F31E8E77EEF8131FD01999BBC6E /* Foundation.framework in Frameworks */,
+				04E68D40246597C500FDA1BC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +307,7 @@
 				0F3DC003B24E88B151232A94224EC771 /* Sources */,
 				1122A17838FBB5E521F59D50666AF50B /* Frameworks */,
 				5777B9BF780AC9399D8749CD31BDA187 /* Resources */,
+				04E68E3F24659B9A00FDA1BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,6 +327,7 @@
 				E0872585FFDC0D8D44F41F382511E2A1 /* Sources */,
 				B9E714FF87E66035F15CC830BE9B0104 /* Frameworks */,
 				C8FA79F6CC387EEC86347BE9310ED990 /* Resources */,
+				04E68C8F2465977900FDA1BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +346,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					3B490833F8E983746E15856651052F15 = {
+						ProvisioningStyle = Automatic;
+					};
+					4CD2798990E6138938DCAC77069B8C4D = {
+						DevelopmentTeam = DTYK3743QS;
+						ProvisioningStyle = Automatic;
+					};
+					BE8C5FF1D69BF04A087CEB25862F5B22 = {
+						DevelopmentTeam = DTYK3743QS;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -410,19 +451,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDC8627CB00274E117DEFC5B7F0F6925 /* Pods-MSSlibIOS_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DTYK3743QS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MSSlibIOS_Tests/Pods-MSSlibIOS_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MSSlibIOS_Tests/Pods-MSSlibIOS_Tests.modulemap";
@@ -431,6 +474,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,19 +489,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DF1696D1F76FFF26AEB8344CE3CD90D /* Pods-MSSlibIOS_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DTYK3743QS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MSSlibIOS_Tests/Pods-MSSlibIOS_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MSSlibIOS_Tests/Pods-MSSlibIOS_Tests.modulemap";
@@ -465,6 +512,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -521,13 +570,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -584,7 +636,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -601,20 +657,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7952964C428902198E8882A4B4D2E6C3 /* MSSlibIOS.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DTYK3743QS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/MSSlibIOS/MSSlibIOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MSSlibIOS/MSSlibIOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = "Target Support Files/MSSlibIOS/MSSlibIOS.modulemap";
 				PRODUCT_MODULE_NAME = MSSlibIOS;
 				PRODUCT_NAME = MSSlibIOS;
@@ -632,20 +690,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D596CDE28A488BF95E26706DB2CD6AA7 /* MSSlibIOS.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DTYK3743QS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/MSSlibIOS/MSSlibIOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MSSlibIOS/MSSlibIOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = "Target Support Files/MSSlibIOS/MSSlibIOS.modulemap";
 				PRODUCT_MODULE_NAME = MSSlibIOS;
 				PRODUCT_NAME = MSSlibIOS;
@@ -665,19 +725,26 @@
 			baseConfigurationReference = F17EE886F56A2A9C0058367467BE00DC /* Pods-MSSlibIOS_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MSSlibIOS_Example/Pods-MSSlibIOS_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MSSlibIOS_Example/Pods-MSSlibIOS_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -685,6 +752,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -698,19 +767,26 @@
 			baseConfigurationReference = 5BFDD6203A17ADA6A1014EF30490EDC6 /* Pods-MSSlibIOS_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MSSlibIOS_Example/Pods-MSSlibIOS_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MSSlibIOS_Example/Pods-MSSlibIOS_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -718,6 +794,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
