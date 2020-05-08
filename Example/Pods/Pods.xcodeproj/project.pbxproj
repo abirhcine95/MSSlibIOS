@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04E68D40246597C500FDA1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		04E68D41246597C600FDA1BC /* Foundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04E68E3D24659B9A00FDA1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		04E68E3E24659B9A00FDA1BC /* Foundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D616FE306A368DA08B41DB828004C9D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E129245188F7E319B40C3ABE8DA3FB /* ReplaceMe.swift */; };
 		64D1A2A5F7DE636E5C81C9AF662374D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		6648ED98BF883CE4459124F91D9354D9 /* Pods-MSSlibIOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53BB6E6FB294CB7F726A830571CF2AB1 /* Pods-MSSlibIOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,31 +35,6 @@
 			remoteInfo = "Pods-MSSlibIOS_Example";
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		04E68C8F2465977900FDA1BC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				04E68D41246597C600FDA1BC /* Foundation.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04E68E3F24659B9A00FDA1BC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				04E68E3E24659B9A00FDA1BC /* Foundation.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03DB28BB2599F7680B84125BCE300E28 /* Pods-MSSlibIOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSSlibIOS_Example.modulemap"; sourceTree = "<group>"; };
@@ -307,7 +280,6 @@
 				0F3DC003B24E88B151232A94224EC771 /* Sources */,
 				1122A17838FBB5E521F59D50666AF50B /* Frameworks */,
 				5777B9BF780AC9399D8749CD31BDA187 /* Resources */,
-				04E68E3F24659B9A00FDA1BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,7 +299,6 @@
 				E0872585FFDC0D8D44F41F382511E2A1 /* Sources */,
 				B9E714FF87E66035F15CC830BE9B0104 /* Frameworks */,
 				C8FA79F6CC387EEC86347BE9310ED990 /* Resources */,
-				04E68C8F2465977900FDA1BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -467,6 +438,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MSSlibIOS_Tests/Pods-MSSlibIOS_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -505,6 +477,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MSSlibIOS_Tests/Pods-MSSlibIOS_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -741,10 +714,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MSSlibIOS_Example/Pods-MSSlibIOS_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -783,10 +753,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MSSlibIOS_Example/Pods-MSSlibIOS_Example.modulemap";
 				OTHER_LDFLAGS = "";
